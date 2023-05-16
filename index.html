@@ -1,0 +1,76 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+
+    <body>
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="calculator col-12 col-md-6 col-lg-4 p-3 h-100">
+                <input type="text" id="screen" class="w-100 h-50"></input>
+                <div class="d-flex flex-column h-50">
+                    <div class="h-25">
+                        <div class="row m-0 h-100">
+                            <button class="col-3 bg-light" onclick="clr()">AC</button>
+                            <button class="col-3 bg-light" onclick="sign()">+/-</button>
+                            <button class="col-3 bg-light" onclick="percentage()" value="%">%</button>
+                            <button class="col-3 bg-warning text-white" onclick="display(this.value)"
+                                value="/">/</button>
+                        </div>
+                    </div>
+                    <div class="h-25">
+                        <div class="row m-0 h-100">
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="7">7</button>
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="8">8</button>
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="9">9</button>
+                            <button class="col-3 bg-warning text-white" onclick="display(this.value)"
+                                value="*">*</button>
+                        </div>
+                    </div>
+                    <div class="h-25">
+                        <div class="row m-0 h-100">
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="4">4</button>
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="5">5</button>
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="6">6</button>
+                            <button class="col-3 bg-warning text-white " onclick="display(this.value)"
+                                value="-">-</button>
+                        </div>
+                    </div>
+                    <div class="h-25">
+                        <div class="row m-0 h-100">
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="1">1</button>
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="2">2</button>
+                            <button class="col-3 bg-dark text-white" onclick="display(this.value)" value="3">3</button>
+                            <button class="col-3 bg-warning text-white" onclick="display(this.value)"
+                                value="+">+</button>
+                        </div>
+                    </div>
+                    <div class="h-25">
+                        <div class="row m-0 h-100">
+                            <button class="col-3 bg-dark text-white dot" onclick="display(this.value)"
+                                value=".">.</button>
+                            <button class="col-3 bg-dark text-white zero" onclick="display(this.value)"
+                                value="0">0</button>
+                            <button class="col-3 bg-dark text-white dot">
+                                <i class="fa fa-toggle-left"></i>
+                            </button>
+                            <button class="col-3 bg-warning text-white equal" onclick="solve()">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+    <script src="https://kit.fontawesome.com/0855a789f8.js" crossorigin="anonymous"></script>
+    <script src="assets/js/calculator.js"></script>
+
+</html>
