@@ -4,7 +4,11 @@ function clr() {
 
 function display(y) {
     let x = document.getElementById("screen").value;
-    x += y;
+    if (y === '') {
+        x = x.substring(0, x.length - 1);;
+    } else {
+        x += y;
+    }
     document.getElementById("screen").value = x;
     x = parseInt(x);
 }
