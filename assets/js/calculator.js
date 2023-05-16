@@ -1,5 +1,6 @@
 function clr() {
     document.getElementById("screen").value = "";
+    document.getElementById("show").innerHTML = "";
 }
 
 function display(y) {
@@ -15,7 +16,8 @@ function display(y) {
 
 function solve() {
     let x = document.getElementById("screen").value;
-    console.log(x, eval(x))
+    document.getElementById("show").innerHTML = "";
+    document.getElementById("show").appendChild(document.createTextNode(x));
     let y = eval(x);
     document.getElementById("screen").value = y;
 }
